@@ -13,7 +13,7 @@ public class LatihanCetakForLoop {
  public static void main(String args[]){
  int r;
  for (r=0; r<100; r++){
- System.out.println("Vina Delta Sari"); 
+ System.out.println("Vina Delta Sarii"); 
  }
  }
     }
