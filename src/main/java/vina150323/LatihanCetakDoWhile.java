@@ -12,7 +12,7 @@ public class LatihanCetakDoWhile {
  public static void main(String args[]){
  int r = 0;
  do {
-  System.out.println("RESTIYANTI");
+  System.out.println("Vina Delta Sari");
   r++;
   } while (r<100);
  }
