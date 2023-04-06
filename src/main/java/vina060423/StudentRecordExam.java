@@ -8,12 +8,13 @@ package vina060423;
  *
  * @author HP
  */
-public class StudentRecordExam {x
-    public static void main(String[] args) {
-       StudentRecord anna = new StudentRecord("Anna","Padang");
-       anna.print("");
-       
-       System.out.println("Jumlah Record :"+StudentRecord.getStudentCount());
-      
-    
+public class StudentRecordExam {
+   
+    public static void main(String[] args){
+        StudentRecord anna = new StudentRecord("Anna", "Padang");
+        anna.print("");
+        anna.nilai = 0;
+        
+        System.out.println("Jumlah Record : "+StudentRecord.getStudentCount());
+    }
 }

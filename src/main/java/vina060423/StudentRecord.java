@@ -9,7 +9,8 @@ package vina060423;
  * @author HP
  */
 public class StudentRecord {
-  
+ 
+    int nilai;
     private String name;
     private String address;
     private int age;
@@ -18,92 +19,109 @@ public class StudentRecord {
     private double scienceGrade;
     private double average;
     
+    // area penulisan kode selanjutnya
+    
     private static int studentCount;
     
-    public  StudentRecord(){
+    public StudentRecord() {  
         studentCount++;
     }
-    public StudentRecord(String temp){
-    this.name = temp;
-     studentCount++;
-    }
-    public StudentRecord(String name, String address){
-    this.name = name;
-    this.address = address;
-     studentCount++;
-    }
-    public StudentRecord(double mGrade, double eGrade, double sGrade){
-    mathGrade = mGrade;
-    englishGrade = eGrade;
-    scienceGrade = sGrade;
-     studentCount++;
+    
+    public StudentRecord(String temp){ 
+        this.name = temp; 
+        studentCount++;
     } 
+    public StudentRecord(String name, String address){ 
+        this.name = name; 
+        this.address = address; 
+        studentCount++;
+    } 
+    public StudentRecord(double mGrade, double eGrade, double sGrade){ 
+        mathGrade = mGrade; 
+        englishGrade = eGrade; 
+        scienceGrade = sGrade; 
+        studentCount++;
+    }
     
-    
-    public String getName(){
+    public String getName() {
         return name;
     }
-    
-    public void setName(String name){
+    public void setName (String name) {
         this.name = name;
     }
-    public String getAddress(){
+    
+    public String getAddress() {
         return address;
     }
-    
-    public void setAddress(String address){
+    public void setAddress (String address) {
         this.address = address;
     }
-    public int getAge(){
+    
+    public int getAge() {
         return age;
     }
-    
-    public void setAge(int age){
+    public void setAge (int age) {
         this.age = age;
     }
-    public double getMathGrade(){
+    
+    public double getMathGrade() {
         return mathGrade;
     }
-    
-    public void setMathGrade(double  mathGrade){
+    public void setMathGrade (double mathGrade) {
         this.mathGrade = mathGrade;
     }
-    public double getEnglishGrade(){
+    
+    public double getEnglishGrade() {
         return englishGrade;
     }
-    
-    public void setEnglishGrade(double  englishGrade){
+    public void setEnglishGrade (double englishGrade) {
         this.englishGrade = englishGrade;
     }
-    public double getScienceGrade(){
+    
+    public double getScienceGrade() {
         return scienceGrade;
     }
-    
-    public void setScienceGrade(double  scienceGrade){
+    public void setScienceGrade (double scienceGrade) {
         this.scienceGrade = scienceGrade;
     }
-    public double getAverage(){
+    
+    public double getAverage() {
         average = (mathGrade + englishGrade + scienceGrade)/3;
         return average;
     }
     
-    public static int  getStrudentCount(){
+    public static int getStudentCount() {
         return studentCount;
     }
-    public void print (String temp){
-        System.out.println("Name:" + name);
-        System.out.println("Address:" + address);
-        System.out.println("Age:" + age);
-     
-    }
-    public void print(double eGrade, double mGrade, double sGrade){
-        System.out.println("Name    : "+name);
-        System.out.println("Math Grade    : "+mGrade);
-        System.out.println("English Grade    : "+eGrade);
-        System.out.println("Science Grade    : "+sGrade);
-        
+    
+    public void print( String temp ){
+        System.out.println("Name          : " + name);
+        System.out.println("Address       : " + address);
+        System.out.println("Age           : " + age);
     }
     
+    public void print(double eGrade, double mGrade, double sGrade) {
+        System.out.println("Name          : " + name);
+        System.out.println("Math Grade    : " + mGrade);
+        System.out.println("English Grade : " + eGrade);
+        System.out.println("Science Grade : " + sGrade);
+    }
+
+    void setAge(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setMathGrade(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setEnglishGrade(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setScienceGrade(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
-  
+    
 
