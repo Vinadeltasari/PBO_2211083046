@@ -8,7 +8,7 @@ package vina060423;
  *
  * @author HP
  */
-public class BukuAlamat {
+public class Latihan10_1BukuAlamat {
     
     private String[] name=new String [100];
     private String[] alamate=new String [100];
@@ -18,7 +18,7 @@ public class BukuAlamat {
     private static int studentCount;
     private static int indek;
 
-    public BukuAlamat(){
+    public Latihan10_1BukuAlamat(){
     studentCount=0;
     }
     public String getName(int indek){

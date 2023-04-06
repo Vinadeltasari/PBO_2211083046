@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  *
  * @author HP
  */
-public class BukuAlamatExample {
+public class Latihan10_2BukuAlamatExample {
     
     public static void main( String[] args ){
     BufferedReader dataIn=new BufferedReader(new InputStreamReader(System.in));
@@ -21,7 +21,7 @@ public class BukuAlamatExample {
     String [] email =new String[100];
 
     //membuat 5 object StudentRecord
-    BukuAlamat namaRecord = new BukuAlamat();
+    Latihan10_1BukuAlamat namaRecord = new Latihan10_1BukuAlamat();
     for(int i=0; i<2; i++ ){
     System.out.print("Input Nama: ");
                try{
@@ -59,7 +59,7 @@ public class BukuAlamatExample {
     System.out.println("===========================================");
     }
 
-    System.out.println("\nTotal Jumlah Siswa ="+BukuAlamat.getStudentCount());
+    System.out.println("\nTotal Jumlah Siswa ="+Latihan10_1BukuAlamat.getStudentCount());
     }
 }
     
