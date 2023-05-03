@@ -9,18 +9,15 @@ package vina130423;
  * @author HP
  */
 public class MyDouble implements Relation {
-    public boolean isGreater (Object a, Object b){
-        return ((int ) a> (int)b);
-        
-    }
-    public boolean isLess (Object a, Object b){
-        return ((int ) a < (int)b);
-    }
-    public boolean isEqual (Object a, Object b){
-        return ((int ) a == (int)b);
 
+    public boolean isGreater(Object a, Object b){
+        return ((double) a > (double )b);
     }
-    
+    public boolean isLess(Object a, Object b){
+        return ((double) a < (double )b);
+    }
+    public boolean isEqual(Object a, Object b){
+        return ((double) a == (double )b);
+    }
 }
-    
 
