@@ -9,11 +9,11 @@ import java.util.*;
  * @author HP
  */
 public interface PeminjamanDao {
-    void save (Peminjaman peminjaman);
-    void update (int idx, Peminjaman peminjaman);
-    void delete (int idx);
-    Anggota getPeminajaman (int idx);
+   void save(Peminjaman peminjaman );
+    void update(int index, Peminjaman peminjaman );
+    void delete(int index);
+    Peminjaman getPeminjaman(int index);
     public List<Peminjaman> getAllPeminjaman();
 }
-    
+
 
