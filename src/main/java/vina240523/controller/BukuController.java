@@ -1,8 +1,10 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package vina240523.controller;
+
 import vina240523.dao.*;
 import vina240523.model.*;
 import vina240523.view.FormBuku;
@@ -18,7 +20,7 @@ import vina240523.database.DatabaseHelper;
  * @author USER
  */
 public class BukuController {
-     FormBuku view;
+    FormBuku view;
     Buku model;
     BukuDao dao;
     
@@ -109,5 +111,3 @@ public class BukuController {
         }
     }
 }
-
-    

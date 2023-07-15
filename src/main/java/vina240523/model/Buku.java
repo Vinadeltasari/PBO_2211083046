@@ -9,7 +9,7 @@ package vina240523.model;
  * @author USER
  */
 public class Buku {
-    private String kodeBuku;
+   private String kodeBuku;
     private String judulBuku;
     private String pengarang;
     private String penerbit;
@@ -57,5 +57,3 @@ public class Buku {
         this.penerbit = penerbit;
     }
 }
- 
-
