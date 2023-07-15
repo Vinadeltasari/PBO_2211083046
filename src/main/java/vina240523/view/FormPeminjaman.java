@@ -71,29 +71,30 @@ public class FormPeminjaman extends javax.swing.JFrame {
         btnCancel = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblPeminjaman = new javax.swing.JTable();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
         jLabel1.setText("NoBp");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(20, 30, 100, 16);
+        jLabel1.setBounds(30, 60, 100, 16);
 
         cboNobp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(cboNobp);
-        cboNobp.setBounds(170, 20, 450, 22);
+        cboNobp.setBounds(170, 50, 450, 22);
 
         jLabel2.setText("Kode Buku");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(17, 80, 80, 16);
+        jLabel2.setBounds(20, 110, 80, 16);
 
         cboKodeBuku.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(cboKodeBuku);
-        cboKodeBuku.setBounds(170, 80, 450, 22);
+        cboKodeBuku.setBounds(170, 100, 450, 22);
 
         jLabel3.setText("Tanggal Pinjam");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 140, 120, 16);
+        jLabel3.setBounds(20, 160, 120, 16);
 
         txtTglPinjam.setText("jTextField1");
         txtTglPinjam.addActionListener(new java.awt.event.ActionListener() {
@@ -102,15 +103,15 @@ public class FormPeminjaman extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtTglPinjam);
-        txtTglPinjam.setBounds(170, 130, 450, 30);
+        txtTglPinjam.setBounds(170, 150, 450, 30);
 
         jLabel4.setText("Tanggal Kembali");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 200, 100, 16);
+        jLabel4.setBounds(20, 210, 100, 16);
 
         txtTglKembali.setText("jTextField2");
         getContentPane().add(txtTglKembali);
-        txtTglKembali.setBounds(170, 190, 450, 30);
+        txtTglKembali.setBounds(170, 200, 450, 30);
 
         btnInsert.setText("Insert");
         btnInsert.addActionListener(new java.awt.event.ActionListener() {
@@ -167,9 +168,13 @@ public class FormPeminjaman extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblPeminjaman);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 300, 660, 190);
+        jScrollPane1.setBounds(10, 300, 670, 260);
 
-        setSize(new java.awt.Dimension(682, 511));
+        jLabel5.setText("Form Peminjaman");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(290, 10, 100, 16);
+
+        setSize(new java.awt.Dimension(702, 602));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -255,6 +260,7 @@ public class FormPeminjaman extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblPeminjaman;
     private javax.swing.JTextField txtTglKembali;

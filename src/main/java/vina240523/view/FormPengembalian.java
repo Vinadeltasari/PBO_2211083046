@@ -183,7 +183,7 @@ public class FormPengembalian extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblPengembalian);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 490, 710, 170);
+        jScrollPane1.setBounds(10, 490, 790, 260);
 
         jLabel6.setText("Tanggal Dikembalikan");
         getContentPane().add(jLabel6);
@@ -197,7 +197,7 @@ public class FormPengembalian extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(610, 440, 75, 23);
 
-        setSize(new java.awt.Dimension(726, 683));
+        setSize(new java.awt.Dimension(822, 765));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

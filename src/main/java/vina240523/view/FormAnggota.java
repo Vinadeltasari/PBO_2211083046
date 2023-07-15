@@ -170,7 +170,7 @@ public class FormAnggota extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(10, 290, 590, 310);
 
-        setBounds(0, 0, 614, 610);
+        setBounds(0, 0, 625, 639);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertActionPerformed
