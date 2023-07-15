@@ -9,12 +9,14 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+
 /**
  *
  * @author USER
  */
 public class FormAnggota extends javax.swing.JFrame {
 
+    
     /**
      * Creates new form FormAnggota
      */
@@ -56,60 +58,60 @@ public class FormAnggota extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        txtNobp = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtNama = new javax.swing.JTextField();
+        txtNobp = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtAlamat = new javax.swing.JTextField();
+        txtNama = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
+        txtAlamat = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        cboJenisKelamin = new javax.swing.JComboBox<>();
         btnInsert = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblAnggota = new javax.swing.JTable();
-        cboJenisKelamin = new javax.swing.JComboBox<>();
-
-        jButton5.setText("jButton5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel1.setText("NoBp");
+        jLabel1.setText("Form Anggota");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(40, 30, 60, 16);
+        jLabel1.setBounds(260, 10, 90, 20);
+
+        jLabel2.setText("No Bp");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(40, 70, 90, 16);
 
         txtNobp.setText("jTextField1");
         getContentPane().add(txtNobp);
-        txtNobp.setBounds(130, 20, 350, 40);
+        txtNobp.setBounds(180, 70, 400, 22);
 
-        jLabel2.setText("Nama");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 100, 60, 16);
+        jLabel3.setText("Nama");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(40, 120, 32, 16);
 
         txtNama.setText("jTextField2");
-        txtNama.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNamaActionPerformed(evt);
-            }
-        });
         getContentPane().add(txtNama);
-        txtNama.setBounds(130, 80, 350, 40);
+        txtNama.setBounds(180, 110, 400, 22);
 
-        jLabel3.setText("Alamat");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 170, 60, 16);
+        jLabel4.setText("Alamat");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(40, 170, 100, 16);
 
         txtAlamat.setText("jTextField3");
         getContentPane().add(txtAlamat);
-        txtAlamat.setBounds(130, 150, 350, 40);
+        txtAlamat.setBounds(180, 160, 400, 22);
 
-        jLabel4.setText("Jenis Kelamin");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 230, 80, 16);
+        jLabel5.setText("Jenis Kelamin");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(40, 210, 90, 16);
+
+        cboJenisKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(cboJenisKelamin);
+        cboJenisKelamin.setBounds(180, 200, 400, 22);
 
         btnInsert.setText("Insert");
         btnInsert.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +120,7 @@ public class FormAnggota extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnInsert);
-        btnInsert.setBounds(20, 290, 72, 23);
+        btnInsert.setBounds(30, 250, 72, 23);
 
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +129,7 @@ public class FormAnggota extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnUpdate);
-        btnUpdate.setBounds(150, 290, 72, 23);
+        btnUpdate.setBounds(160, 250, 72, 23);
 
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +138,7 @@ public class FormAnggota extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnDelete);
-        btnDelete.setBounds(280, 290, 72, 23);
+        btnDelete.setBounds(320, 250, 72, 23);
 
         btnCancel.setText("Cancel");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
@@ -145,14 +147,17 @@ public class FormAnggota extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCancel);
-        btnCancel.setBounds(410, 290, 72, 23);
+        btnCancel.setBounds(470, 250, 72, 23);
 
         tblAnggota.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "NoBp", "Nama", "Alamat", "Jenis kelamin"
+                "NoBp", "Nama", "Alamat", "Jenis Kelamin"
             }
         ));
         tblAnggota.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -163,39 +168,24 @@ public class FormAnggota extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblAnggota);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 320, 500, 220);
+        jScrollPane1.setBounds(10, 290, 590, 310);
 
-        cboJenisKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(cboJenisKelamin);
-        cboJenisKelamin.setBounds(130, 220, 130, 22);
-
-        setSize(new java.awt.Dimension(527, 568));
-        setLocationRelativeTo(null);
+        setBounds(0, 0, 614, 610);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNamaActionPerformed
 
     private void btnInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertActionPerformed
         // TODO add your handling code here:
         controller.insert();
         controller.tampilTabel();
-        controller.clearForm();
+        controller.clearForm();    
     }//GEN-LAST:event_btnInsertActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
-        controller.update();
+         controller.update();
         controller.tampilTabel();
         controller.clearForm();
     }//GEN-LAST:event_btnUpdateActionPerformed
-
-    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        // TODO add your handling code here:
-        controller.tampilTabel();
-        controller.clearForm();
-    }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
@@ -204,9 +194,15 @@ public class FormAnggota extends javax.swing.JFrame {
         controller.clearForm();
     }//GEN-LAST:event_btnDeleteActionPerformed
 
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        // TODO add your handling code here:
+         controller.tampilTabel();
+        controller.clearForm();
+    }//GEN-LAST:event_btnCancelActionPerformed
+
     private void tblAnggotaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblAnggotaMouseClicked
         // TODO add your handling code here:
-        controller.getAnggota();
+         controller.getAnggota();
     }//GEN-LAST:event_tblAnggotaMouseClicked
 
     /**
@@ -250,12 +246,11 @@ public class FormAnggota extends javax.swing.JFrame {
     private javax.swing.JButton btnInsert;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JComboBox<String> cboJenisKelamin;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblAnggota;
     private javax.swing.JTextField txtAlamat;

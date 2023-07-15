@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package vina240523.controller;
-import vina240523.DAO.*;
+import vina240523.dao.*;
 import vina240523.model.*;
 import vina240523.view.*;
 import java.sql.SQLException;
@@ -13,12 +13,14 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import vina240523.database.DatabaseHelper;
+
 /**
  *
  * @author USER
  */
 public class AnggotaController {
-    FormAnggota view;
+    
+   FormAnggota view;
     Anggota model;
     AnggotaDao dao;
     

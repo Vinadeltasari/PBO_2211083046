@@ -3,24 +3,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package vina240523.database;
-import vina240523.DAO.*;
-import vina240523.model.*;
-import com.mysql.cj.jdbc.MysqlDataSource;
+
+import vina240523.dao.AnggotaDao;
+import vina240523.dao.AnggotaDaoImpl;
+import vina240523.model.Anggota;
 import java.sql.Connection;
+import com.mysql.cj.jdbc.MysqlDataSource;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author USER
  */
 public class DatabaseHelper {
-     private static Connection connection;
-    
-    public static Connection getConnection() throws SQLException{
+    private static Connection connection;
+    public  static Connection getConnection() throws SQLException{
         if(connection == null){
             MysqlDataSource dataSource = new MysqlDataSource();
+
             dataSource.setUrl("jdbc:mysql://localhost/pbo_vinadeltasari");
             dataSource.setUser("root");
             dataSource.setPassword("");
@@ -29,20 +32,18 @@ public class DatabaseHelper {
         }
         return connection;
     }
-    
-    public static void main(String[] args) {
-        try{
+    public static void main(String [] args ){
+        try {
             connection = DatabaseHelper.getConnection();
-            Anggota anggota = new Anggota();
+            Anggota anggota = new Anggota ();
             anggota.setNobp("98312111");
             anggota.setNama("Ali");
-            anggota.setAlamat("Padang");
+            anggota.setAlamat("Paris");
             anggota.setJenisKelamin("L");
             AnggotaDao dao = new AnggotaDaoImpl(connection);
             dao.insert(anggota);
-            
-            JOptionPane.showMessageDialog(null,"Entri Ok");
-        } catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Entri Ok");
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, ex.getMessage());
             Logger.getLogger(DatabaseHelper.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -9,7 +9,7 @@ package vina240523.model;
  * @author USER
  */
 public class Anggota {
-    private String nobp;
+     private String nobp;
     private String nama;
     private String alamat;
     private String jenisKelamin;
